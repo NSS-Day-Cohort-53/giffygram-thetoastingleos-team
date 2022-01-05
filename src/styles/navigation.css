@@ -30,7 +30,7 @@
 
 .navigation__message {
     margin-left: auto;
-    margin-right: 4em;
+    margin-right: 20%;
     display: flex;
     flex-direction: row;
     position: relative;
@@ -51,6 +51,7 @@
     text-align: center;
     border-radius: 25px;
     cursor: pointer;
+    margin-left: 75%;
 }
 
 .navigation__messageItem {
@@ -58,7 +59,7 @@
 }
 
 .navigation__logout {
-    margin-right: 2em;
+    margin-right: 5%;
 }
 
 #directMessageIcon {
