@@ -2,17 +2,34 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
-    border-bottom: 1px solid lightblue;
+    border-bottom: 1px solid rgb(60, 183, 224);
     padding: 0.5em 0 0.5em 1em;
     margin-bottom: 2em;
     position: fixed;
     z-index: 11;
     bottom: 0;
+    left: 0;
     width: 100%;
-    background-color: whitesmoke;
+    height: 90px;
+    background-color: #f2f2f2;
     margin: auto;
 }
 
+
+.footer-text-left {
+  font-size:25px;
+  padding-left:40px;
+  float:left;
+  word-spacing:20px;
+}
+
+a.menu:hover {
+  background-color:yellow;
+  font-size:20px;
+}
+
+
 .footer__item {
     margin: 0 1rem;
+    flex-basis: 100%;
 }
