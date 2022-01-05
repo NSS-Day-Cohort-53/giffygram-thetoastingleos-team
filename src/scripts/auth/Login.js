@@ -18,6 +18,8 @@ document.addEventListener("click", clickEvent => {
         if (foundUser !== null) {
             localStorage.setItem("gg_user", foundUser.id)
             document.querySelector(".giffygram").dispatchEvent(new CustomEvent("stateChanged"))
+        } else {
+            window.alert("You have an incorrect username/password")
         }
     }
 })
