@@ -1,6 +1,9 @@
 import { getUsers } from "../data/provider.js"
 import { GiffyGram } from "../GiffyGram.js"
 import { renderApp } from "../main.js"
+import { RegisterForm } from "./Register.js"
+
+
 
 
 document.addEventListener("click", clickEvent => {
@@ -24,6 +27,10 @@ document.addEventListener("click", clickEvent => {
                 window.alert("You have an incorrect username/password")
             }
         })
+    } 
+    if (clickEvent.target.id === "RegisterButton") {
+        //call to register form
+        RegisterForm() 
     }
 })
 
@@ -41,6 +48,9 @@ export const LoginForm = () => {
                 </fieldset>
             </form>
             <button id="loginButton">Login</button>
+            
+            <button id="RegisterButton">Register as a New User</button>
         </div>
     `
 }
+
