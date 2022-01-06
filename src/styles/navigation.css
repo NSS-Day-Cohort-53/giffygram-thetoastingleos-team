@@ -34,6 +34,7 @@
     display: flex;
     flex-direction: row;
     position: relative;
+    cursor: pointer;
 }
 
 .navigation__message > img {
@@ -60,6 +61,7 @@
 
 .navigation__logout {
     margin-right: 5%;
+    cursor: pointer;
 }
 
 #directMessageIcon {

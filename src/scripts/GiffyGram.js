@@ -4,7 +4,7 @@ import { Footer } from "./nav/Footer.js"
 export const GiffyGram = () => {
 
     // Show main main UI
-    return `<header class="navigation"><h1>Giffygram</h1>
+    return `<header class="navigation" id="homepage"><h1>Giffygram</h1>
     ${NavBar()}
     </header>
     
