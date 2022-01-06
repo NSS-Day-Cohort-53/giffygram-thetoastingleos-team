@@ -3,14 +3,15 @@ import { LoginForm } from "./auth/Login.js"
 
 const applicationElement = document.querySelector(".giffygram")
 
-export const renderApp = () => {
+export const renderApp = (foo) => {
     const user = parseInt(localStorage.getItem("gg_user"))
 
     if (user) {
-        applicationElement.innerHTML = GiffyGram()
+        applicationElement.innerHTML = foo
     } else {
         applicationElement.innerHTML = LoginForm()
     }
 }
 
-renderApp()
+renderApp(GiffyGram())
+
