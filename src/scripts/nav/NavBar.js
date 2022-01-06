@@ -9,8 +9,8 @@ export const NavBar = () => {
     <section class="navigation__logout">Logout</section>
     `
 }
-document.addEventListener("click", clickEvent => {
-    // if (clickEvent.target.id === "dsfgsdfg") {
-    //    renderApp(Messages())
-    // }
-})
+// document.addEventListener("click", clickEvent => {
+//     if (clickEvent.target.id === "dsfgsdfg") {
+//        renderApp(Messages())
+//     }
+// })
