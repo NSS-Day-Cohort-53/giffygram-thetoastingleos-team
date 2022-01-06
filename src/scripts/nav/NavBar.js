@@ -22,8 +22,8 @@ export const NavBar = () => {
         }
     })
     return `
-    <section class="notification__count" id="messages">Messages</section>
-    <section class="navigation__message" id="sendMsg">Send Msg</section>
-    <section class="navigation__logout" id="logout">Logout</section>
+    <div class="notification__count" id="messages">Messages</div>
+    <div class="navigation__message" id="sendMsg">Send Msg</div>
+    <div class="navigation__logout" id="logout">Logout</div>
     `
 }
