@@ -1,11 +1,6 @@
 import { renderApp } from "../main.js"
 import { Messages } from "../friends/DirectMessage.js"
 
-document.addEventListener("click", clickEvent => {
-    // if (clickEvent.target.id === "dsfgsdfg") {
-    //    renderApp(Messages())
-    // }
-})
 
 export const NavBar = () => {
     return `
@@ -14,3 +9,8 @@ export const NavBar = () => {
     <section class="navigation__logout">Logout</section>
     `
 }
+document.addEventListener("click", clickEvent => {
+    // if (clickEvent.target.id === "dsfgsdfg") {
+    //    renderApp(Messages())
+    // }
+})
