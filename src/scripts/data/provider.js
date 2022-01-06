@@ -23,6 +23,5 @@ export const fetchUsers = () => {
 }
 
 export const getUsers = () => {
-    fetchUsers()
-    return applicationState.users.map((user) => ({...user}))
+    return fetchUsers().then(() => { return applicationState.users.map((user) => ({...user}))});
 }
