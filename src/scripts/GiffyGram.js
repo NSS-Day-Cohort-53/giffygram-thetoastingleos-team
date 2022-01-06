@@ -1,9 +1,16 @@
 import { NavBar } from "./nav/NavBar.js"
+import { Footer } from "./nav/Footer.js"
 
 export const GiffyGram = () => {
 
     // Show main main UI
     return `<header class="navigation"><h1>Giffygram</h1>
     ${NavBar()}
-    </header>`
+    </header>
+    
+    <br>
+
+    <footer class="foot"><div class="foot__content"></div>
+    ${Footer()}
+    </footer>`
 }
