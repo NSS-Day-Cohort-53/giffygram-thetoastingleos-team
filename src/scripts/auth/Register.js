@@ -1,9 +1,17 @@
-
+import { LoginForm } from "./Login.js"
+import { Terms } from "./Terms.js"
 
 
 const applicationElement = document.querySelector(".giffygram")
 
-
+document.addEventListener("click", event=> {
+    if (event.target.id === "Loginbutton"){
+        return applicationElement.innerHTML = LoginForm()
+    }
+    if (event.target.id === "Terms"){
+        return applicationElement.innerHTML = Terms()
+    }
+})
 
 
 
@@ -31,12 +39,12 @@ export const RegisterForm = () => {
       <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
       <hr>
   
-      <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+      <p>By creating an account you agree to our <button type="Terms" class="registerbtn" id="Terms" >Terms</button></p>
       <button type="submit" class="registerbtn">Register</button>
     </div>
   
     <div class="container signin">
-      <p>Already have an account? <a href="#">Log in</a>.</p>
+      <p>Already have an account? <button type="Login" class="registerbtn" id="Loginbutton" > Login </button></p>
     </div>
   </form>
     `
