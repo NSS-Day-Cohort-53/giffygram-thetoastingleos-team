@@ -1,17 +1,18 @@
 import { renderApp } from "../main.js"
-import { Messages } from "../friends/DirectMessage.js"
+import { DirectMessages } from "../friends/DirectMessage.js"
 import { SendMsg } from "../message/MessageForm.js"
 import { GiffyGram } from "../GiffyGram.js"
 import { LoginForm } from "../auth/Login.js"
 
 
+
 export const NavBar = () => {
     document.addEventListener("click", async (clickEvent) => {
         if (clickEvent.target.id === "messages") {
-           renderApp(Messages())
+           renderApp( await DirectMessages())
         }
         if (clickEvent.target.id === "sendMsg"){
-            renderApp(SendMsg())
+            renderApp(await SendMsg())
         }
         if (clickEvent.target.id === "homepage"){
             renderApp(await GiffyGram())
@@ -21,9 +22,11 @@ export const NavBar = () => {
             renderApp(LoginForm())
         }
     })
-    return `
+    return `<header class="navigation">
+    <h1 id="homepage">GiffyGram</h1>
     <div class="notification__count" id="messages">Messages</div>
     <div class="navigation__message" id="sendMsg">Send Msg</div>
     <div class="navigation__logout" id="logout">Logout</div>
+    </header>
     `
 }

@@ -1,13 +1,15 @@
 import { NavBar } from "./nav/NavBar.js"
 import { Footer } from "./nav/Footer.js"
+import { PostForm } from "./feed/PostForm.js"
 import { Posts } from "./feed/PostList.js"
 
 export const GiffyGram = async () => {
 
     // Show main main UI
-    return `<header class="navigation" id="homepage"><h1>Giffygram</h1>
+    return `
     ${NavBar()}
-    </header>
+    
+    <section>${PostForm()}</section>
     <section class="giffygram__feed">
     ${await Posts()}
     </section>
