@@ -4,7 +4,7 @@ import { LoginForm } from "./auth/Login.js"
 
 const applicationElement = document.querySelector(".giffygram")
 
-export const renderApp = (foo) => {
+export const renderApp = async (foo) => {
     const user = parseInt(localStorage.getItem("gg_user"))
 
     if (user) {
@@ -14,5 +14,5 @@ export const renderApp = (foo) => {
     }
 }
 
-renderApp(GiffyGram())
+renderApp(await GiffyGram())
 
