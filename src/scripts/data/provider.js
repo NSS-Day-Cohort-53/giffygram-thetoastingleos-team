@@ -25,3 +25,16 @@ export const fetchUsers = () => {
 export const getUsers = () => {
     return fetchUsers().then(() => { return applicationState.users.map((user) => ({...user}))});
 }
+
+export const sendPost = (userPost) => {
+    const fetchOptions = {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(userPost)
+    }
+    return fetch(`${API}/posts`, fetchOptions)
+        .then(response => response.json())
+        .then(() => {
+            document.dispatchEvent(new CustomEvent("stateChanged"))
+        })
+}

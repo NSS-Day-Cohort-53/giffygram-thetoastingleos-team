@@ -1,4 +1,4 @@
-.footer {
+/* .footer {
     display: block;
     flex-wrap: nowrap;
     justify-content: start;
@@ -43,16 +43,16 @@ a.menu:hover {
 }
 
 /* Place the navbar at the bottom of the page, and make it stick */
-.navbar {
+/* .navbar {
   background-color: rgb(16, 172, 219);
   overflow: hidden;
   position: fixed;
   bottom: 0;
   width: 100%;
-}
+} */
 
 /* Style the links inside the navigation bar */
-.navbar a {
+/* .navbar a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -60,16 +60,16 @@ a.menu:hover {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-}
+} */
 
 /* Change the color of links on hover */
-.navbar a:hover {
+/* .navbar a:hover {
   background-color: #ddd;
   color: rgb(240, 238, 238);
-}
+} */
 
 /* Add a color to the active/current link */
 .navbar a.active {
   background-color: #04AA6D;
   color: white;
-}
+} */
