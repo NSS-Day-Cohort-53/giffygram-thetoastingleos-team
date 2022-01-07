@@ -1,5 +1,5 @@
 .miniMode {
-    padding: 1rem;
+    padding: 12rem;
     margin: 0 25%;
     border: 1px dashed slategrey;
     border-radius: 0.5rem;
@@ -51,10 +51,12 @@
 .post {
     margin: 0 25%;
     flex-basis: 50%;
+    
 }
 
 .post__image {
     width: 100%;
+    
 }
 
 .post__actions {

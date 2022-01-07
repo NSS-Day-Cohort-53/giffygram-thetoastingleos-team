@@ -11,6 +11,7 @@ export const GiffyGram = async () => {
     <section class="giffygram__feed">
     ${await Posts()}
     </section>
+    
     <br>
 
     <footer class="foot"><div class="foot__content"></div>

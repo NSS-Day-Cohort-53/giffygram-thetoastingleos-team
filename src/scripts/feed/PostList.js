@@ -7,16 +7,19 @@ export const Posts = async () => {
         let html = "<ul>"
                         
         const postsList = posts.map((post) => {
-            return `<li id="${post.id}">
+            return `<li id="${post.id}" 
             <p class="post__tagline">${post.title}</p>
-            <img class="post__image" src="${post.imageURL}"/>
-            <p class="post__remark">${post.Description}</p>
+            <img src="${post.imageURL}" 
+            <p class="post__remark">${post.description}</p>
             <p class="post__tagline">Posted by ${post.authorName} on ${post.timestamp}</p>
-            </li>`
+            
+             </li>`
+             
         })
         html += postsList.join("")
         html += "</ul>"
         return html
+        
 
 }
 
