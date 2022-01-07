@@ -43,7 +43,9 @@ export const sendPost = (userPost) => {
         .then(response => response.json())
         .then(() => {
             document.dispatchEvent(new CustomEvent("stateChanged"))
-        )}
+        })
+}        
+
             
         
 
