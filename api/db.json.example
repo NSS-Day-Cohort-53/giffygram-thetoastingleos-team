@@ -18,26 +18,20 @@
    
     "posts": [
       {
-        
-        "userId": 1
-        "title": "Crazy Times",
-        "imageURL":https://media.giphy.com/media/xGyPhPlrFPimO59wAS/giphy.gif",
-        "Description": "Jimmy Fallon",
-        "timestamp": 01/07/2022,
-        "authorName": "Elizabeth Taylor",
-        "favorite": "no"
-        "id": 1 
+        "giffyUserId": 1,
+        "title": "test",
+        "URL": "test",
+        "description": "test",
+        "date": 1641561077173,
+        "id": 4
       },
-
       {
-        "id": 2
-        "userId": 2
-        "title": "Issa Ray"
-        "imageURL":"https://media.giphy.com/media/mdtoXraBEzEjjBlrOB/giphy.gif"
-        "Description": "that first check from your new tech job"  
-        "timestamp": 01/09/2022
-        "authorName": "Garth Brook"
-        "favorite": "yes"
-      }
+        "giffyUserId": 1,
+        "title": "test 2",
+        "URL": "test 2",
+        "description": "test 2",
+        "date": 1641561875383,
+        "id": 5
+      },
 
     ]
