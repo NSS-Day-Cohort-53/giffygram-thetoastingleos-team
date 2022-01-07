@@ -17,11 +17,9 @@ export const Messages = async () => {
     const messages = await fetchMessages()
     let html= "<ul>"
     const messageList = messages.map((message) => {
-        return `<li id="${message.id}">
-        <p class="message__tagline">${message.title}</p>
-        <img class="message__image" src="${message.imageURL}"/>
-        <p class="message__remark">${message.Description}</p>
-        <p class="message__tagline">messaged by ${message.authorName} on ${message.timestamp}</p>
+        return `<li id="${message.authorId}">
+        <p class="message__tagline">${message.recipientId}</p>
+        <p class="message__remark">${message.text}</p>
         </li>`
     })
     html += messageList.join("")
