@@ -6,7 +6,7 @@ import { LoginForm } from "../auth/Login.js"
 
 
 export const NavBar = () => {
-    document.addEventListener("click", clickEvent => {
+    document.addEventListener("click", async (clickEvent) => {
         if (clickEvent.target.id === "messages") {
            renderApp(Messages())
         }
@@ -14,7 +14,7 @@ export const NavBar = () => {
             renderApp(SendMsg())
         }
         if (clickEvent.target.id === "homepage"){
-            renderApp(GiffyGram())
+            renderApp(await GiffyGram())
         }
         if (clickEvent.target.id === "logout"){
             localStorage.removeItem("gg_user")
