@@ -33,13 +33,18 @@ export const fetchPosts = async () => {
         })
 }
 
-// export const getUsers = () => {
-//     return fetchUsers().then(() => { return applicationState.users.map((user) => ({...user}))});
-// }
-
-// export const getPosts = () => {
-//     return fetchPosts().then(() => { return applicationState.posts.map((post) => ({...post}))});
-// }
+export const sendPost = (userPost) => {
+    const fetchOptions = {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(userPost)
+    }
+    return fetch(`${API}/posts`, fetchOptions)
+        .then(response => response.json())
+        .then(() => {
+            document.dispatchEvent(new CustomEvent("stateChanged"))
+        })
+}        
 
 export const addUser = (userRequest) => {
     const fetchOptions = {
