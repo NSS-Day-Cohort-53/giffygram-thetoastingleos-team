@@ -1,14 +1,15 @@
 import { renderApp } from "../main.js"
-import { Messages } from "../friends/DirectMessage.js"
+import { DirectMessages } from "../friends/DirectMessage.js"
 import { SendMsg } from "../message/MessageForm.js"
 import { GiffyGram } from "../GiffyGram.js"
 import { LoginForm } from "../auth/Login.js"
 
 
+
 export const NavBar = () => {
     document.addEventListener("click", async (clickEvent) => {
         if (clickEvent.target.id === "messages") {
-           renderApp(Messages())
+           renderApp( await DirectMessages())
         }
         if (clickEvent.target.id === "sendMsg"){
             renderApp(await SendMsg())

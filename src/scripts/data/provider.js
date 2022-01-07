@@ -6,6 +6,7 @@ const applicationState = {
     messages: [],
     posts: [],
     users: [],
+    messages: [],
     currentUser: {},
     feed: {
         chosenUser: null,
