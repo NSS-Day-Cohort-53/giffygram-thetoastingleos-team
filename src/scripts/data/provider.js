@@ -5,6 +5,7 @@ const applicationElement = document.querySelector(".giffygram")
 const applicationState = {
     posts: [],
     users: [],
+    messages: [],
     currentUser: {},
     feed: {
         chosenUser: null,
@@ -32,6 +33,16 @@ export const fetchPosts = async () => {
             return applicationState.posts.map((post) => ({...post})) 
         })
 }
+
+export const fetchMessages = async () => {
+    return await fetch(`${API}/messages`)
+        .then(res => res.json())
+        .then((messages) => {
+            applicationState.messages = messages
+            return applicationState.messages.map((message) => ({...message})) 
+        })
+}
+
 
 // export const getUsers = () => {
 //     return fetchUsers().then(() => { return applicationState.users.map((user) => ({...user}))});
