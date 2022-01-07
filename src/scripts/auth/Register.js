@@ -24,6 +24,8 @@ document.addEventListener("click", event => {
           password: newPassword,
         }
         return addUser(newData)
+      } else {
+        window.alert("Please make sure your passwords match")
       }
     }
 })

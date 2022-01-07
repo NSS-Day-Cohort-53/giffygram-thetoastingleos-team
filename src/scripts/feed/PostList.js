@@ -11,7 +11,7 @@ export const Posts = async () => {
             const foundUser = users.find((user) => user.id === post.giffyUserId)
             return `<li id="${post.id}">
             <p class="post__tagline">${post.title}</p>
-            <img class="post__image" src="${post.URL}"/>
+            <img src="${post.URL}"/>
             <p class="post__remark">${post.description}</p>
             <p class="post__tagline">Posted by ${foundUser.username} on ${post.date}</p>
             </li>`
