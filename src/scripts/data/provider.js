@@ -46,9 +46,6 @@ export const sendPost = (userPost) => {
         })
 }        
 
-            
-        
-
 export const addUser = (userRequest) => {
     const fetchOptions = {
         method: "POST",

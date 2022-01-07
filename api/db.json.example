@@ -35,3 +35,11 @@
       },
 
     ]
+   "messages": [
+      {
+        "authorId": 1,
+        "recipientId": 2,
+        "text": "What up bro",
+        "read": true
+      }
+    ]
