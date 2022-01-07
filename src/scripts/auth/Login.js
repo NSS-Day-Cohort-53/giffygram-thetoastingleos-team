@@ -1,4 +1,4 @@
-import { getUsers } from "../data/provider.js"
+import { fetchUsers } from "../data/provider.js"
 import { GiffyGram } from "../GiffyGram.js"
 import { renderApp } from "../main.js"
 import { RegisterForm } from "./Register.js"
@@ -6,10 +6,11 @@ import { RegisterForm } from "./Register.js"
 
 
 
-document.addEventListener("click", clickEvent => {
+document.addEventListener("click", async (clickEvent) => {
     if (clickEvent.target.id === "loginButton") {
         let foundUser = null
-        getUsers().then((userState) => {
+        let userState = await fetchUsers()
+        
             const email = document.querySelector("input[name='email']").value
             const password = document.querySelector("input[name='password']").value
     
@@ -22,11 +23,11 @@ document.addEventListener("click", clickEvent => {
             if (foundUser !== null) {
                 localStorage.setItem("gg_user", foundUser.id)
                 document.querySelector(".giffygram").dispatchEvent(new CustomEvent("stateChanged"))
-                renderApp(GiffyGram())
+                renderApp(await GiffyGram())
             } else {
                 window.alert("You have an incorrect username/password")
             }
-        })
+        
     } 
     if (clickEvent.target.id === "RegisterButton") {
         //call to register form
