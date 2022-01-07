@@ -2,9 +2,8 @@ import { fetchMessages } from "../data/provider.js";
 import { NavBar } from "../nav/NavBar.js"
 
 export const DirectMessages = async () => {
-    return`<header class="navigation" id="homepage"><h1>Giffygram</h1>
+    return`
     ${NavBar()}
-    </header>
     <div>
     ${await Messages()}
     </div>`

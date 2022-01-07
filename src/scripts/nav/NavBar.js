@@ -12,7 +12,7 @@ export const NavBar = () => {
            renderApp( await DirectMessages())
         }
         if (clickEvent.target.id === "sendMsg"){
-            renderApp(SendMsg())
+            renderApp(await SendMsg())
         }
         if (clickEvent.target.id === "homepage"){
             renderApp(await GiffyGram())
@@ -22,9 +22,11 @@ export const NavBar = () => {
             renderApp(LoginForm())
         }
     })
-    return `
+    return `<header class="navigation">
+    <h1 id="homepage">GiffyGram</h1>
     <div class="notification__count" id="messages">Messages</div>
     <div class="navigation__message" id="sendMsg">Send Msg</div>
     <div class="navigation__logout" id="logout">Logout</div>
+    </header>
     `
 }
