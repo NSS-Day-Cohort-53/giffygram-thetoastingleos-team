@@ -44,7 +44,7 @@ a.menu:hover {
 
 /* Place the navbar at the bottom of the page, and make it stick */
 .navbar {
-  background-color: rgb(16, 172, 219);
+  background-color: rgb(164, 180, 185);
   overflow: hidden;
   position: fixed;
   bottom: 0;
@@ -70,6 +70,6 @@ a.menu:hover {
 
 /* Add a color to the active/current link */
 .navbar a.active {
-  background-color: #04AA6D;
+  background-color: #d6e7e1;
   color: white;
 }
