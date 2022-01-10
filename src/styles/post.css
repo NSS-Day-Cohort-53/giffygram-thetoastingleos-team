@@ -49,13 +49,15 @@
 }
 
 .post {
+    
     margin: 0 25%;
     flex-basis: 50%;
-    
 }
 
 .post__image {
     width: 100%;
+    
+    
     
 }
 
@@ -66,15 +68,32 @@
 }
 
 .post__tagline {
-    font-size: 1.0em;
+    font-size: 2em;
     margin: 1em 0 0.5em 0;
+    padding-left: 20px;
+    text-align: center;
 }
 
 .post__remark {
-    font-size: 2em;
+    font-size: 1.0em;
     margin: 1em 0 0.5em 0;
+    text-align: center;
 }
 
 .entirePost{
-    border: solid;
+text-align: center;
+
 }
+
+
+.blockPost{
+    display: block;
+    
+}
+
+body {
+    background-color:burlywood;
+  } 
+
+
+
