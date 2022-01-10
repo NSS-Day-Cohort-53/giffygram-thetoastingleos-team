@@ -32,11 +32,3 @@ export const Messages = async () => {
   
 
 
-// window.addEventListener("SentMsg", receiveMessage);
-
-// const applicationElement = document.querySelector(".giffygram")
-
-// document.addEventListener("click", event => {
-//     if (event.target.id === "Home"){
-//         return applicationElement.innerHTML = (Home)
-//     }

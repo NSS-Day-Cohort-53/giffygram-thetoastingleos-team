@@ -44,13 +44,7 @@ export const fetchMessages = async () => {
         })
 }
 
-// export const getUsers = () => {
-//     return fetchUsers().then(() => { return applicationState.users.map((user) => ({...user}))});
-// }
 
-// export const getPosts = () => {
-//     return fetchPosts().then(() => { return applicationState.posts.map((post) => ({...post}))});
-// }
 export const sendPost = (userPost) => {
     const fetchOptions = {
         method: "POST",
