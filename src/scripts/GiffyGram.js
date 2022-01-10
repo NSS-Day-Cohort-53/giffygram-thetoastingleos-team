@@ -5,7 +5,7 @@ import { Posts } from "./feed/PostList.js"
 
 export const GiffyGram = async () => {
 
-    // Show main main UI
+    
     return `
     ${NavBar()}
     

@@ -35,21 +35,3 @@ const userOptions = async () => {
     return usersList
 }
 
-// export const SentMsgs = async () => {
-//     const messages = await fetchMessages()
-//     const user = localStorage.getItem("gg_user")
-//     if (msg.authorId === user){
-//     messages.map(msg => {(msg.authorId === user)
-     
-//         return 
-
-// insert Sent messages below.... if no messages have been sent then display Oops Looks like you havent sent any messages
-
-// "messages": [
-//     {
-//       "authorId": 1,
-//       "recipientId": 2,
-//       "text": "What up bro",
-//       "read": true
-//     }
-//   ]

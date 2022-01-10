@@ -1,6 +1,6 @@
 import { GiffyGram } from "./GiffyGram.js"
 import { LoginForm } from "./auth/Login.js"
-// import { RegisterForm } from "./auth/Register.js"
+
 
 const applicationElement = document.querySelector(".giffygram")
 
